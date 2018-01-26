@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import {GridBoxComponent} from './grid-box/grid-box.component'
 import {PersonDetailsComponent} from './person-details/person-details.component'
+import {UpdateComponent} from './update/update.component'
 
 
 
@@ -14,6 +15,10 @@ const routes: Routes = [
     {
       path: 'person/:id',
       component: PersonDetailsComponent
+    },
+    {
+      path: 'update',
+      component: UpdateComponent
     }
 ];
 

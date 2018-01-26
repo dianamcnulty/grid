@@ -1,0 +1,22 @@
+<h2 id='status-update-msg'>Update your Status</h2>
+<form (ngSubmit)="updateStatus(update)">
+  <legend>Person's Id:
+    <input type='number' name='id' [(ngModel)]="update.id">
+  </legend>
+  <legend>Person's First Name:
+    <input type='text' name='firstName' [(ngModel)]="update.firstName">
+  </legend>
+  <legend>Status:
+    <select name='status' [(ngModel)]="update.status">
+      <option>finished</option>
+      <option>waiting</option>
+      <option>working</option>
+      <option>emergency</option>
+      <option>day off</option>
+    </select>
+  </legend>
+  <input type='submit' value='send'>
+
+</form>
+
+<button routerLink='/'>Back to status Grid</button>

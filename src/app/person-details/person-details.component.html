@@ -1,14 +1,15 @@
 <h2>Person</h2>
 <p [ngClass]="{'emergency': currentPerson.status == 'emergency', 'waiting': currentPerson.status == 'waiting', 'finished': currentPerson.status == 'finished'}">
 <label>Status:</label> <span>{{currentPerson.status}}</span></p>
-<p><label>Name: </label><span>{{currentPerson.name}},</span></p>
+<p><label>Name: </label><span>{{currentPerson.firstName}} {{currentPerson.firstName}},</span></p>
 <p><label>Id: </label><span>{{currentPerson.id}},</span></p>
 
 <div class='contact-info'>
   <label>Contact info: </label>
   <p *ngIf='currentPerson.phone'><label>Phone: </label> {{currentPerson.phone}}</p>
   <p *ngIf='currentPerson.email'><label>email:</label> {{currentPerson.email}}</p>
-  <p *ngIf='currentPerson.url'><label>GPS track: </label> <a href="{{currentPerson.url}}" target="_blank">{{currentPerson.name}}'s gps tracking site</a></p>
+  <p *ngIf='currentPerson.url'><label>GPS track: </label> <a href="{{currentPerson.url}}" target="_blank">{{currentPerson.firstName}}'s gps tracking site</a></p>
 </div>
 
 <button routerLink='/'>Back to status Grid</button>
+<button routerLink='/update'>Update Someone's Status</button>

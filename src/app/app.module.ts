@@ -9,12 +9,14 @@ import { AppComponent } from './app.component';
 import { GridBoxComponent } from './grid-box/grid-box.component';
 import { PersonDetailsComponent } from './person-details/person-details.component';
 import { PeopleService } from './people.service';
+import { UpdateComponent } from './update/update.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GridBoxComponent,
     PersonDetailsComponent,
+    UpdateComponent,
   ],
   imports: [
     BrowserModule,
