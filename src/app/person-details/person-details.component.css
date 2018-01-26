@@ -1,11 +1,17 @@
-.grid-container{
-  display: grid;
-  grid-template-columns: 1fr 4fr
-
+label{
+  font-weight: bold;
 }
-.grid-cell{
-  border: 1px black solid;
-  text-align: center;
-  height: 40px;
-  align-self: stretch;
+div p{
+  padding:  0 20px;
+}
+.emergency {
+  border: red solid 2px;
+  color: red;
+  font-size: 20pt;
+}
+.waiting {
+  color: orange;
+}
+.finished {
+  color: green;
 }

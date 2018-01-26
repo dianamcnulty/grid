@@ -11,7 +11,7 @@ export class PeopleService {
                     name: "Joe Test",
                     phone: "867-5309",
                     email: "joe"+i+"@email.com",
-                    url: "www.randomurl.com"
+                    url: "http://www.schoolofpersonalflight.com"
                     }
 
       if (i % 15 < 4){
