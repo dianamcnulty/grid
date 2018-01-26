@@ -1,19 +1,34 @@
 .grid-container{
   display: grid;
-  grid-template-columns: repeat(10, 1fr)
-
+  grid-template-columns: repeat(10, 1fr);
+  align-items: center;
+  border-bottom: 1px #243816 solid;
+  border-right: 1px #243816 solid;
+  background: #243816;
+}
+h2 {
+ height: 90%;
+ margin: 0;
+ padding: 5px;
 }
 .grid-cell{
-  border: 1px black solid;
+  border-top: 1px #243816 solid;
+  border-left: 1px #243816 solid;
   text-align: center;
-  height: 40px;
+ align-content: center;
+   height: 40px;
+  background-color: white;
+  color: black;
 }
-.red{
-  background-color: red;
+.emergency{
+  background: linear-gradient(top left, #FF0896, #AC0069);
 }
-.yellow{
-  background-color: yellow;
+.waiting{
+  background: linear-gradient(top left, #FFCB00, #FF9500) ;
 }
-.green{
-  background-color: green;
+.finished{
+  background: linear-gradient(top left, #3F5E02, #243816);
+}
+.out {
+  background:  #243816;
 }

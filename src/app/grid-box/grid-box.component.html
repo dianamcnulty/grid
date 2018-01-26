@@ -1,4 +1,4 @@
 <div class="grid-container">
-  <div  class="grid-cell" *ngFor="let person of personList" [ngClass]="{'red':person.status=='emergency', green: person.status =='finished', 'yellow': person.status == 'waiting'}" routerLink="/person/{{person.id}}">{{person.id}}</div>
+  <div  class="grid-cell" *ngFor="let person of personList" [ngClass]="{'emergency':person.status=='emergency', finished: person.status =='finished', 'waiting': person.status == 'waiting', 'out': person.status == 'out'}" routerLink="/person/{{person.id}}"><h2>{{person.id}}</h2></div>
 </div>
 <button routerLink='/update'>Update Someone's Status</button>

@@ -18,11 +18,13 @@ export class PeopleService {
 
         if (i % 15 < 4){
           person.status = "waiting";
-        } else if (i % 15 > 4){
+        } else if (i % 15 > 7){
           person.status = "finished";
         } else if (i % 15 == 4){
           person.status = "emergency";
-        } else {
+        } else if (i % 15 == 7){
+          person.status = "out";
+        }else {
           person.status = "working";
         }
         array.push(person)
