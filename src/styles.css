@@ -6,7 +6,7 @@ body{
 
 }
 input[type=submit], button{
-  background: linear-gradient(to bottom, #534218,  #e2c666,  #92762e);
+  background: linear-gradient(to bottom,   #e2c666,  #92762e);
   height: 30px;
   border-radius: 8px;
   font-family: serif;

@@ -17,7 +17,7 @@ h2 {
   text-align: center;
  align-content: center;
    height: 40px;
-  background-color: white;
+  background: linear-gradient(to left, #abbaab, #ffffff);
   color: black;
 }
 .emergency{
