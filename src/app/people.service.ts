@@ -44,6 +44,12 @@ export class PeopleService {
     console.log( 'persons new status', personToUpdate)
 
   }
+  addPerson(newPerson){
+    console.log("new person is", newPerson)
+    newPerson.status = "out";
+    this.people.push(newPerson)
+    console.log("new person added", this.people)
+  }
   constructor() { }
 
 }

@@ -1,10 +1,12 @@
-
+<h2>Status Overview</h2>
 <div class="grid-container">
   <div  class="grid-cell" *ngFor="let person of personList" [ngClass]="{'emergency':person.status=='emergency', finished: person.status =='finished', 'waiting': person.status == 'waiting', 'out': person.status == 'out'}" routerLink="/person/{{person.id}}">
     <h2>{{person.id}}</h2></div>
   </div>
 <div class='page-links'>
-<button routerLink='/update'> Update Someone's Status
+<button routerLink='/update'>Update Someone's Status
+</button>
+<button routerLink='/new'>Add a New Person
 </button>
 </div>
 <label>Legend:</label>

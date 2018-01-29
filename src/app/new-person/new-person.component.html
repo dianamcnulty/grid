@@ -1,0 +1,28 @@
+<h2>
+  Add New Person
+</h2>
+<form (ngSubmit)="addPerson(person)">
+  <legend>Person's Id:
+    <input type='number' name='id' [(ngModel)]="person.id">
+  </legend>
+  <legend>Person's First Name:
+    <input type='text' name='firstName' [(ngModel)]="person.firstName">
+  </legend>
+  <legend>Person's Last Name:
+    <input type='text' name='lastName' [(ngModel)]="person.lastName">
+  </legend>
+  <legend>Person's Email:
+    <input type='email' name='email' [(ngModel)]="person.email">
+  </legend>
+  <legend>Person's Phone:
+    <input type='phone' name='phone' [(ngModel)]="person.phone">
+  </legend>
+  <legend>Person's GPS Page url (optional):
+    <input type='text' name='url' [(ngModel)]="person.url">
+  </legend>
+  <input type='submit' value='send'>
+
+</form>
+<div class='page-links'>
+<button routerLink='/'>Back to status Grid</button>
+</div>

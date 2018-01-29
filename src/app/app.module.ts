@@ -10,6 +10,7 @@ import { GridBoxComponent } from './grid-box/grid-box.component';
 import { PersonDetailsComponent } from './person-details/person-details.component';
 import { PeopleService } from './people.service';
 import { UpdateComponent } from './update/update.component';
+import { NewPersonComponent } from './new-person/new-person.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { UpdateComponent } from './update/update.component';
     GridBoxComponent,
     PersonDetailsComponent,
     UpdateComponent,
+    NewPersonComponent,
   ],
   imports: [
     BrowserModule,
