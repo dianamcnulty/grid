@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  font-family: serif;
+  background: linear-gradient(to bottom, #dad299, #b0dab9) fixed;
+
+
+}
+input[type=submit], button{
+  background: linear-gradient(to bottom, #534218,  #e2c666,  #92762e);
+  height: 30px;
+  border-radius: 8px;
+  font-family: serif;
+  font-size: 12pt;
+  font-weight: bold;
+  -webkit-appearance: button;
+}
+.page-links{
+  text-align: center;
+  margin: 20px;
+}

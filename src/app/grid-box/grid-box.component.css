@@ -21,13 +21,13 @@ h2 {
   color: black;
 }
 .emergency{
-  background: linear-gradient(top left, #FF0896, #AC0069);
+  background: linear-gradient(to bottom right, #FF0896, #AC0069);
 }
 .waiting{
-  background: linear-gradient(top left, #FFCB00, #FF9500) ;
+  background: linear-gradient(to bottom right, #fceabb, #f8b500);
 }
 .finished{
-  background: linear-gradient(top left, #3F5E02, #243816);
+  background: linear-gradient(to bottom right, #3F5E02, #243816);
 }
 .out {
   background:  #243816;
