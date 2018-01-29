@@ -20,7 +20,7 @@ export class PeopleService {
           person.status = "waiting";
         } else if (i % 15 > 7){
           person.status = "finished";
-        } else if (i % 15 == 4){
+        } else if (i % 92 == 4){
           person.status = "emergency";
         } else if (i % 15 == 7){
           person.status = "out";
